@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.util.Random;
@@ -37,17 +38,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public void clicked2(View v){
         if(tB.isChecked()){
-            mone = 1;
+            Toast.makeText(this, "Toggle in work status", Toast.LENGTH_LONG).show();
         }else {
-            mone = 0;
+            Toast.makeText(this, "Toggle in not work status", Toast.LENGTH_LONG).show();
         }
 
     }
     public void clicked3(View v){
         if(switch1.isChecked()){
-            mone2 = 1;
+            Toast.makeText(this, "Toggle in work status", Toast.LENGTH_LONG).show();
         }else {
-            mone2 = 0;
+            Toast.makeText(this, "Toggle in not work status", Toast.LENGTH_LONG).show();
         }
 
     }
